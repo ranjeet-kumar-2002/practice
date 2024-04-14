@@ -1,0 +1,47 @@
+# Git uses three-tier architecture i.e a working directory, staging area and local repository.
+
+code . // open vs code from cmd
+ls // show list
+cd // change directory
+
+git clone [URL]
+git pull // pull repo from server to local machine
+git push // push repo from local to server
+
+
+git init
+git status
+git config --global user.name 
+git config --global user.email
+
+git diff [FILE_NAME] // to see difference in working directory
+git diff --staged [FILE_NAME] // to see difference in staging area
+
+git add [FILE_NAME]
+git add . // add all the changes
+git add -A // all all the changes
+
+git reset [FILE_NAME] to reset file from staging area to working directory
+
+git commit -a -m "message" // commit changes with message
+
+git log // for detail of previous commits
+
+git checkout [BRANCH]
+git checkout [COMMIT HASH]
+git checkout [FILE_NAME] // to revert changes in working directory
+git checkout . // reset changes till last commit
+
+
+git branch
+
+git remote
+git remote -v
+git remote add origin https://github.com/OWNER/REPOSITORY.git
+// add a new remote
+
+git push -u [REMOTE_NAME] [BRANCH_NAME]
+git push -u origin master
+
+clear
+exit
